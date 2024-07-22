@@ -81,7 +81,8 @@ header {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: min-content;
-    padding: 20px 40px;
+    padding: 20px 80px;
+    row-gap: 20px;
     
 }
 
@@ -95,7 +96,7 @@ header .icon {
 header .search-area {
     grid-column: 1/2;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     
 }
@@ -108,4 +109,67 @@ header .search-area .search-bar {
     padding: 3px 20px;
     line-height: 1.5;
     font-size: 16px;
+}
+
+header .account-notification-area {
+    display: flex;
+    grid-column: 2/3;
+    justify-self: end;
+    align-items: center;
+    gap: 25px;
+    padding-right: 15px;
+
+}
+
+header .account-notification-area img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+header .account-notification-area p {
+    font-weight: 900;
+}
+
+header .hello-area{
+
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+
+}
+
+.hello-area .profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.hello-message p {
+    font-weight: 800;
+}
+
+.hello-message p:nth-child(2) {
+    font-size: 25px;
+}
+
+.account-buttons {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.account-buttons button {
+    background-color: #3b82f6;
+    color: #eff6ff;
+    border: none;
+    border-radius: 45px;
+    width: 100px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
 }
